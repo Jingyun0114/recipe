@@ -1,0 +1,63 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <link rel="stylesheet" type="text/css" href="form.css" />
+        <script type="text/javascript" language="javascript" src="functions.js"></script>
+        <title>Login</title>
+        
+    </head>
+    <body>
+         <!-- header part here -->
+        <div class="row darorange">   
+                <div class="col-2">
+                    <a href="home.php"><img src="image/logo.png" width="150"></img></a>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-5 forsearch">
+                    <form class="search" action="search.php" method="post" >
+                            <input type="search" name="search" id="search" />
+                            <input type="submit" name="submit" id="submit" value="Search" />
+                    </form>
+                </div>
+                <div class="col-3 forlogin">
+
+                </div>
+        </div>
+        <!-- End of header part here -->
+        <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 login">  
+            <form id="form2" name="form2" method="post" action="login.php"  onsubmit="return checkAll2(this)">
+                <h2 >Login</h2>
+                <div>
+                    <div class="formLable">Email:</div>
+                    <div class="formInput">
+                        <input id="email" name="email" type="text" onblur="checkEmail(this.id,'divright1')">
+                    </div>
+                    <div class="divright" id="divright1">Please enter a valid email address.</div>
+                </div>
+                <div>     
+                    <div class="formLable">Password:</div>
+                    <div class="formInput">
+                        <input id="password" name="password" type="password" onblur="checkPassword(this.id,'divright2')">
+                    </div>
+                    <div class="divright" id="divright2">Wrong password.</div>
+                </div>
+                <div class="button">
+                    <button class="hand" type="submit" name="log_submit" value="Login">Login</button>
+                </div>
+            </form> 
+		
+            <div id="gotoregister">
+                <div id="gotoregister1">Go to</div> 
+                <div id="gotoregister2"><a href="register.html">Register</a></div>
+            </div> 
+        </div>
+    </div>
+    </body>
+</html>
+

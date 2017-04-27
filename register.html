@@ -1,0 +1,106 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <link rel="stylesheet" type="text/css" href="form.css" />
+        <script type="text/javascript" language="javascript" src="functions.js"></script>
+        <title>Register</title>
+        
+    </head>
+    <body>
+         <!-- header part here -->
+        <div class="row darorange">   
+                <div class="col-2">
+                    <a href="home.php"><img src="image/logo.png" width="150"></img></a>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-5 forsearch">
+                    <form class="search" action="search.php" method="post" >
+                            <input type="search" name="search" id="search" />
+                            <input type="submit" name="submit" id="submit" value="Search" />
+                    </form>
+                </div>
+                <div class="col-3 forlogin">
+                </div>
+        </div>
+        <!-- End of header part here -->
+
+        <div class="row">
+        <div class="col-3"></div>          
+            <div class="col-6 register">
+                <h2 >Register</h2>     
+                <form id="form1" name="form1" method="post" action="register.php" enctype="multipart/form-data" onsubmit="return checkAll(this)">                    
+                    <div>
+                        <div class="formLable">
+                            Email:*
+                        </div>
+                        <div class="formInput">
+                            <input id="email" name="email" type="text" onblur="checkEmail(this.id,'divright1')"/>                    
+                        </div>
+                        <div class="divright" id="divright1">Please enter a valid email address.</div>
+                    </div>
+                    <div>
+                        <div class="formLable">
+                            Username:*
+                        </div>
+                        <div class="formInput">
+                            <input id="username" name="username" type="text" onblur="checkUsername(this.id,'divright2')"/>                 
+                        </div>
+                        <div class="divright" id="divright2">Username should contain at least 3 characters, at most 15 characters.</div>
+                    </div>
+                    
+                    <div> 
+                        <div class="formLable">
+                            Password:*
+                        </div>
+                        <div class="formInput">
+                            <input id="password" name="password" type="password"  onblur="checkPassword(this.id,'divright3')"/> 
+                        </div>
+                        <div class="divright" id="divright3">Password should contain at least 6 characters, at most 15 characters.</div>
+                    </div>
+                    
+                    <div>
+                        <div class="formLable">
+                            Confirm Password:*
+                        </div>
+                        <div class="formInput">
+                            <input id="repwd" name="repwd" type="password"  onblur="checkRePwd(this.id,'divright4')"/>
+                        </div>
+                        <div class="divright" id="divright4">Password does not match.</div>
+                    </div>
+                    
+                    <div>
+                        <div class="formLable">
+                            Bio:
+                        </div>
+                        <div class="formInput" id="bioinput">
+                            <textarea id="bio" name="bio" cols="18" rows="2" maxlength="200"> </textarea>                           
+                        </div>                        
+                    </div>
+                    
+                    <div>
+                        <div class="formLable">
+                            Photo:
+                        </div>
+                        <div class="formInput">
+                            <input class="hand" id="photo" name="photo" type="file"> 
+                        </div>                       
+                    </div> 
+                    
+                    <div class="button">
+                        <input  class="hand" type="reset" value="Reset"></input>  
+                        <input  class="hand" type="submit" name="reg_submit" value="Register"></input>         
+                    </div>
+                </form>
+                
+                <div id="gotologin">
+                    <div id="gotologin1">Go to</div> 
+                    <div id="gotologin2"><a href="login.html">Login</a></div>
+                </div>
+                </div>
+        </div>
+    </body>
+</html>

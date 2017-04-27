@@ -1,0 +1,103 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <link rel="stylesheet" type="text/css" href="form.css" />
+        <script type="text/javascript" language="javascript" src="functions.js"></script>
+        <title>Upload</title>
+        
+    </head>
+    <body>
+         <!-- header part here -->
+        <div class="row darorange">   
+                <div class="col-2">
+                    <a href="home.php"><img src="image/logo.png" width="150"></img></a>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-5 forsearch">
+                    <form class="search" action="search.php" method="post" >
+                            <input type="search" name="search" id="search" />
+                            <input type="submit" name="submit" id="submit" value="Search" />
+                    </form>
+                </div>
+                <div class="col-3 forlogin">
+                </div>
+        </div>
+        <!-- End of header part here -->
+        
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 upload">
+                <form id="form3" name="form3" method="post" action="upload.php" enctype="multipart/form-data" onsubmit="return checkAll3(this)">
+                    <h2>Upload</h2>
+                        <div> 
+                            <div class="formLable1">Recipe name:</div>
+                            <div class="formInput1"> <input id="rname" name="rname" type="text" maxlength="50" onblur="checkNotnull(this.id,'divright1')"></div>
+                            <div class="divright" id="divright1">Please enter a recipe name.</div>
+                        </div> 
+                    
+                        <div> 
+                            <div class="formLable1">Category:</div>                        
+                            <div class="formInput1">
+                                <select id="tid" name="tid">
+                                    <option name="tid" value="1">Appetizer</option>
+                                    <option name="tid" value="2">Entree</option>
+                                    <option name="tid" value="3">Salad</option>
+                                    <option name="tid" value="4">Soup</option>
+                                    <option name="tid" value="5">Dessert</option>
+                                    <option name="tid" value="6">Drink</option>                            
+                                </select>
+                            </div>
+                            
+                        </div>
+                    
+                        <div> 
+                            <div class="formLable1">Calorie:</div>
+                            <div class="formInput1"><input  id="calorie" name="calorie" type="number" required min="0" max="10000"></div>
+                            <div class="divright" id="divright3">Please enter a valid Calorie.</div>
+                        </div>
+                    
+                        <div id="ingredientarea"> 
+                            <div class="formLable1">Ingredient:</div>               
+                            <div class="formInput1"> 
+                                <ul id="inlist">
+                                    <li><input id="ingredient" name="ingredient_1" type="text" onblur="checkNotnull(this.id,'divright4')"></li>
+                                    <li><input name="ingredient_2" type="text" ></li>
+                                </ul>
+							</div>
+                            <div class="divright" id="divright4">Please enter the ingredients.</div>
+                            <div id="add1">
+                               <input class="hand" type="button" onclick="addIngredient()" value="Add Ingredients">                             
+                            </div>
+                        </div> 
+                    
+                        <div id="instructionarea">      
+                            <div class="formLable1">Instruction:</div>
+                            <div> Step 1:</div>
+                            <div class="formInput1"> 
+							<textarea id="instruction" name="instruction_1" rows="2" cols="25" onblur="checkNotnull(this.id,'divright5')"></textarea>
+							</div>
+                            <div class="divright" id="divright5">Please enter the Instructions.</div>
+                            <div id="add2">
+                               <input class="hand" type="button" onclick="addInstruction()" value="Add Steps">                               
+                            </div>
+                        </div> 
+                    
+                        <div>      
+                            <div class="formLable1">Picture:</div>
+                            <div class="formInput1"> <input class="hand" id="picture" name="photo" type="file" onblur="checkPicture(this.id,'divright6')">  </div>
+                            <div class="divright" id="divright6">Please upload the picture.</div>
+                        </div> 
+                    
+                        <div class="button">
+							<input class="hand" type="reset" value="Reset"></input>
+							<input class="hand" type="submit" name="up_submit" value="Submit"></input> 
+                        </div>
+                </form>        
+            </div>
+        </div>                               
+    </body>
+</html>

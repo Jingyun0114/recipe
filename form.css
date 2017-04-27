@@ -1,0 +1,107 @@
+.divright {
+    color:red;
+    display:none;
+}
+
+.register, .login{
+    text-align:center;
+}
+
+.upload, .login, .register{
+    background-color: #FCFFF5;
+	margin:1%;
+    text-align:center;
+	border-radius:5px;
+}
+
+.formLable{
+    display:inline-block;
+    width: 145px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.formInput{
+    display:inline-block;
+    width: 145px;
+}
+
+
+
+.button{
+    margin-top:10px;   
+}
+
+
+.button .hand{
+    text-transform: uppercase;
+    cursor:pointer;
+    border-width: 0;
+    border-radius: 5px;
+    color: white;
+    background: #3E606F;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}
+
+#gotoregister, #gotologin {
+	text-align:center;
+	margin-top:10px;
+}
+
+#gotoregister1, #gotoregister2, #gotologin1,#gotologin2{
+    display:inline-block;
+}
+/*
+#gotoregister2 a, #gotologin2 a{
+	
+}
+*/
+/*upload*/
+#ad1, #ad2{
+    text-align:center;
+}
+
+.upload .button input{
+    text-align: center;
+}
+
+.upload h2{
+    text-align:center;
+}
+
+.formLable1{ 
+    text-transform: uppercase;
+    text-align:center; 
+	background:#D1DBBD;
+	margin:2% 0 2% 35%;
+    width:30%;
+    padding:5px;
+	border-radius:5px;
+	
+}
+
+.formInput1 ul {
+    margin:0;
+    padding:0;
+}
+
+.formInput1 ul li{
+    list-style-type:none;
+}
+
+.formInput1{  
+    text-align:center; 
+    display:block;
+    border:none;
+    width:100%;  
+}
+
+#picture{
+    margin-left:20%;
+}
+
+.hand {
+    cursor:pointer;
+}
+

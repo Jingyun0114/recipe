@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding:1%;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#D1DBBD;
+    color:#3E606F;
+}
+
+.darorange{
+    background-color:#3E606F;
+/*    border-radius:5px 5px 5px 5px;*/
+}
+
+.main{
+    margin: 0 5% 0 5%;
+}
+
+.darorange img{
+    width:100%;
+}
+
+.forsearch{
+    margin-top: 2%; 
+}
+
+.forlogin{
+    margin-top: 2%;
+}
+
+#login, #register{
+    display: inline-block;
+    color:white;
+    font-weight: bold;
+}
+
+#login a, #register a{
+    text-decoration:none;
+    color: white;
+    margin:0 10px 0 10px;
+}
+
+#login a:hover, #register a:hover {
+    color:#D1DBBD;
+}
+
+#search{
+    width:50%;
+}
+
+#submit{
+    text-transform: uppercase;
+    cursor:pointer;
+    border-width: 0;
+    border-radius: 5px;
+    color: #3E606F;
+    background: #D1DBBD;
+    padding: 3px 10px 3px 10px;
+    text-decoration: none;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+
+.menu li {
+    text-align: center;
+    padding: 10px 0 10px 0;
+    margin-bottom: 10px;
+    background-color: #91AA9D;
+    border-radius:5px;
+}
+
+.menu li a{ 
+    text-transform: uppercase;; 
+    text-decoration:none;
+    color:white;
+}
+
+.menu li a:hover {
+    color: #3E606F;
+}
+
+.show img, .showlist img, .showview img{
+    width: 100%;
+}
+
+.show ul, .showlist ul{
+    padding: 5%;
+    list-style-type: none;
+}
+
+.showview ul{
+    list-style-type: none;
+}
+.show tr a, .showlist tr a, .showview tr a{ 
+    text-decoration:none;
+    color:#3E606F;
+}
+
+.show td, .showlist td, .showview td{
+    padding:2%;
+    background-color: #FCFFF5;
+    border-radius:5px;
+}
+
+.show div a, .showlist div a{
+    text-decoration: underline;
+}
+
+.show span, .showlist span{
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.right{
+    text-align:center;
+    color:white;
+    margin-top: 1%;
+    border-radius:5px;
+    background-color: #91AA9D;
+}
+
+#home_login, #home_register{
+    display: inline-block;
+    margin-left:5%;
+    color:white;
+    font-weight: bold;
+}
+
+#home_login a, #home_register a{
+    text-decoration:none;
+    color:white;
+}
+
+#history p{
+    color:white;
+}
+
+#history ul{
+    list-style-type: circle;
+}
+
+#history li a{ 
+    text-decoration:none;
+    color:white;
+    font-style: italic;
+}
+
+.right div{
+    margin:2%;
+}
+
+#user_upload{
+    text-align:center;
+	margin:5px;
+}
+
+#user_upload a{
+    cursor:pointer;
+    border-width: 0;
+    border-radius: 5px;
+    color: white;
+    background: #3E606F;
+    padding: 3px 10px 3px 10px;
+    text-decoration: none;
+}
+
+#user_upload a:hover {
+    color:white;
+}
+
+.footer{
+    padding: 1px 0 1px 0;
+    text-align: center;
+    background-color:#3E606F;
+    border-radius: 5px 5px 5px 5px;
+    color:white;
+}
+
+.footer a{
+    color:white;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.showlist tr td{
+    width:70%;
+}
+
+.showlist h1, .showview h1{
+    text-align: center;
+}
+
+.showlist img{
+    padding:0 10% 0 10%;
+}
+
+.showview{
+    margin-top:1%;
+    padding:1%;
+    background-color: #FCFFF5;
+    border-radius:5px;
+}
+
+.showview img{
+    padding: 0 10% 0 10%;
+}
+
+#recipe_main{
+    padding: 0 5% 0 5%;
+}
+
+#recipe_main h3 a {
+    color: #3E606F;
+}
+
+#recipe_main ul li label{
+    font-weight:bold;
+}
+
+
+#recipe_main div ul li, #recipe_main div ul li{
+    list-style-type: circle;
+}
+
+#recipe_main label, #recipe_main label{
+    font-weight:bold;
+}
+
+#comment{
+    margin: 0 10% 0 10%;
+}
+
+#comment span{
+    color:red;
+}
+
+#com_context{
+    box-sizing: border-box;
+	width: 100%;
+}
+
+#com_submit{
+    text-transform: uppercase;
+    cursor:pointer;
+    border-width: 0;
+    border-radius: 5px;
+    color: white;
+    background: #3E606F;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}
+
+#all_comm table{
+    width:100%;
+}
+
+#all_comm td{
+    background-color: #D1DBBD;
+    border-radius:5px;
+    padding:1%;
+}
+
+.userinfo{
+    color:white;
+    margin-top:1%;
+    background-color: #91AA9D;
+    border-radius:5px;
+}
+
+#personal img{
+    width:50%;
+}
